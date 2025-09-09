@@ -1,7 +1,8 @@
-# mangoBlock IDE (desktop version)
+# mangomlock (desktop version)
 
-Desktop version of mangoblock IDE
-![V2-1](https://github.com/user-attachments/assets/75bc01f6-f761-4263-8939-86608bf89a94)
+MangoBlock IDE
+<img width="1917" height="1017" alt="Screenshot-01" src="https://github.com/user-attachments/assets/74214667-c5f8-4ff3-ba93-1719c74491b5" />
+
 
 
 ## Using
@@ -19,4 +20,5 @@ npm install
 # Run program
 npm start
 ```
+
 
