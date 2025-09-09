@@ -1,0 +1,77 @@
+{
+  "name": "mangoblock",
+  "version": "2.0.2",
+  "PYTHON_API": "2.1.6",
+  "description": "mangoblock (desktop version)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild -f -w \"wifi-control\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mangoblock/mangoblock-desktop.git"
+  },
+  "author": "Dr. Chihmin Lo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mangoblock/mangoblock-desktop/issues"
+  },
+  "homepage": "https://mangoblock.tw",
+  "devDependencies": {
+    "check-dependencies": "1.1.0",
+    "electron": "9.2.0",
+    "electron-builder": "^22.9.1",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "bcrypt": "5.0.0",
+    "child_process": "^1.0.2",
+    "dive": "0.5.0",
+    "fs-extra": "^11.3.0",
+    "iconv-lite": "^0.6.3",
+    "monaco-python": "^0.1.9",
+    "node-disk-info": "^1.3.0",
+    "node-file-dialog": "^1.0.3",
+    "node-wifi": "2.0.14",
+    "node-wmi": "^0.0.5",
+    "serialport": "^11.0.1",
+    "streamedian": "github:Streamedian/html5_rtsp_player",
+    "sweetalert2": "^11.17.2",
+    "util": "^0.12.5"
+  },
+  "build": {
+    "appId": "tw.mangoblock.app",
+    "productName": "MangoBlock",
+    "asar": true,
+    "win": {
+      "target": [
+        "nsis",
+        "msi"
+      ],
+      "icon": "build/mango.png"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "default",
+      "icon": "build/favicon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "build/mango.png",
+      "category": "Development"
+    },
+    "fileAssociations": [
+      {
+        "ext": "mb",
+        "name": "MB",
+        "description": "MangoBlock project file",
+        "icon": "build/favicon.ico",
+        "role": "Editor"
+      }
+    ]
+  },
+  "postinstall": "electron-builder install-app-deps"
+}
