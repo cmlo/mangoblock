@@ -5,12 +5,13 @@ MangoBlock IDE
 
 
 
-## Download
+## Downloads
 
 ```bash
 # MangoBlock IDE desktop version
 
 ```
+
 
 
 
