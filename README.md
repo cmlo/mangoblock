@@ -5,20 +5,12 @@ MangoBlock IDE
 
 
 
-## Using
+## Download
 
 ```bash
-# Clone project
-git clone --recurse-submodules https://github.com/mangoBlock/mangoBlock-desktop.git
+# MangoBlock IDE desktop version
 
-# Install electron-rebuild
-npm install --save-dev electron-rebuild
-
-# Install the dependencies 
-npm install
-
-# Run program
-npm start
 ```
+
 
 
